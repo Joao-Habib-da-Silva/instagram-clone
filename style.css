@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+:root {
+    --bg-color: #000;
+    --color:white;
+}
+:root.dark {
+    --bg-color:white;
+    --color: #000;
+}
+body {
+    font-family: 'Instagram Sans';
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    transition: 0.5s ease-in-out;
+    color: var(--color);
+}
+#menu {
+    width: 20%;
+}
+#menu-image {
+    height: 9vh;
+    overflow-y: hidden;
+}
+#menu img {
+    width: 150px;
+    padding: 0;
+}
+#menu-principal {
+    height: 105vh;
+}
+#menu-principal li {
+    margin-top: 13px;
+    height: 46px;
+}
+#menu-principal i {
+    margin-right: 15px;
+    margin-left: 20px;
+}
+#menu-principal a {
+    color: var(--color);
+    border-radius: 10px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    font-size: 1.7rem;
+    width: 250px;
+    height: 46px;
+}
+#menu-more {
+background-color:rgb(3, 7, 30, 0.7);
+backdrop-filter: blur(5px);
+position: absolute;
+top: 30vh;
+left: 0px;
+height: 0vh;
+display: flex;
+padding-left: 20px;
+padding-top: 20px;
+width: 320px;
+border-radius: 30px;
+overflow-y: hidden;
+opacity: 0;
+transition: 0.5s ease-in-out;
+}
+#menu-more.flex {
+    opacity: 1;
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out;
+    height: 60vh;
+}
+#menu-more li {
+    margin-bottom:15px;
+    overflow-y: hidden;
+
+}
+#menu-more a {
+    padding-left: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 6vh;
+    width: 275px;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+#menu-more a:hover {
+    transition: 0.5s ease-in-out ;
+    border-radius: 10px;
+    background-color: #2b2d42;
+}
+#menu-more i {
+    margin-right: 10px;
+}
+#menu-more a {
+    text-decoration: none;
+    color: white;
+}
+#menu-principal a:hover {
+    transition: 0.5s ease-in-out;
+    background-color: #2b2d42;
+}
+#menu-principal p {
+    margin-top: -5px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+#body {
+    width: 50%;
+    background-color: red;
+}
+#sugestions {
+    width: 30%;
+    background-color: blue;
+}
